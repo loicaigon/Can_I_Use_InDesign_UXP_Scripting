@@ -1,0 +1,17 @@
+//TESTED on MAC 12.5.1
+//InDesign 2023 (18.0)
+
+//AddPageOptions property of text preferences sets the way pages reflow when overset and Smart Reflow enabled
+//prop can be set on doc and on app for global modification
+
+//Using an open document
+var doc = app.activeDocument;
+
+//Works
+doc.textPreferences.addPages = AddPageOptions.END_OF_STORY;
+
+//Works
+doc.textPreferences.addPages = AddPageOptions.END_OF_SECTION;
+
+//Works
+doc.textPreferences.addPages = AddPageOptions.END_OF_DOCUMENT;

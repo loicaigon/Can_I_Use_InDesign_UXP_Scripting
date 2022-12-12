@@ -1,0 +1,11 @@
+{
+  "name": "can_i_use_indesign_uxp_scripting",
+  "version": "1.0.0",
+  "description": "This repo intends to track current status of InDesign UXP Scripting deployment. It will (try to) process every single DOM method and properties to let us about the exact State of the Art",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
