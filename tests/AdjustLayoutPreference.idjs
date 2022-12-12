@@ -1,1 +1,38 @@
-//TO BE TESTED
+//TESTED on MAC 12.5.1
+//InDesign 2023 (18.0)
+
+//AddPageOptions property of text preferences sets the way pages reflow when overset and Smart Reflow enabled
+//prop can be set on doc and on app for global modification
+
+//Using an open document
+var doc = app.activeDocument;
+
+//Works - enable/disable adjust checkbox in the Pages and Margins window
+doc.adjustLayoutPreferences.enableAdjustLayout = true;
+
+//Works - enable/disable font size checkbox in the adjust layout option within in the Pages and Margins window
+doc.adjustLayoutPreferences.allowFontSizeAndLeadingAdjustment = true;
+
+//Works - check/uncheck option for automatic margins adjustment in the File/Adjust Layout window
+doc.adjustLayoutPreferences.enableAutoAdjustMargins = false;
+
+//NOT TESTED - DONT'T THINK IT WAS FUNCTIONAL WITH EXTENDSCRIPT NEITHER TBH
+doc.adjustLayoutPreferences.eventListeners;
+doc.adjustLayoutPreferences.events;
+
+//Works - check/uncheck option for restring foint size modification
+doc.adjustLayoutPreferences.imposeFontSizeRestriction = true;
+
+//Not sure if it makes sense to test this one
+doc.adjustLayoutPreferences.isValid
+
+//Works - max font size is modified accordingly in the File/Adjust window
+doc.adjustLayoutPreferences.maximumFontSize = 239;
+
+//Works  - max font size is modified accordingly in the File/Adjust window
+doc.adjustLayoutPreferences.minimumFontSize = 16;
+
+//Works - return document
+doc.adjustLayoutPreferences.parent
+
+
